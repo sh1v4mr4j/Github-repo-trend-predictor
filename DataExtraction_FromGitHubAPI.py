@@ -7,7 +7,7 @@ def fetch_github_repositories(query="", max_repos=5000):
     per_page = 100  # Maximum number of results per page is 100
 
     # Check the rate limit before making requests
-    rate_limit_response = requests.get('https://api.github.com/rate_limit', headers={'Authorization': 't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'})
+    rate_limit_response = requests.get('https://api.github.com/rate_limit', headers={'Authorization': 'EnterTokenHere'})
     rate_limit_data = rate_limit_response.json()
     remaining_requests = rate_limit_data['resources']['search']['remaining']
     reset_time = rate_limit_data['resources']['search']['reset']
@@ -23,7 +23,7 @@ def fetch_github_repositories(query="", max_repos=5000):
         # Modify the URL to sort by stars
         url = f'https://api.github.com/search/repositories?q={query}&sort=stars&order=desc&page={page}&per_page={per_page}'
         
-        headers = {'Authorization': 't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'}
+        headers = {'Authorization': 'EnterTokenHere'}
         response = requests.get(url, headers=headers)
 
         if response.status_code == 200:
