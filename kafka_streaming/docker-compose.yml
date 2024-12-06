@@ -19,12 +19,14 @@ services:
     depends_on:
       - zookeeper
     environment:
+      KAFKA_HEAP_OPTS: "-Xmx512m -Xms512m"
       KAFKA_BROKER_ID: 1
       KAFKA_ADVERTISED_HOST_NAME: 0.0.0.0
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:32181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       JMX_PORT: 10000
+     
     networks:
       - bridge
     container_name: kafka
