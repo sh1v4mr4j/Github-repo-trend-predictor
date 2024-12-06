@@ -9,12 +9,13 @@ from kafka import KafkaConsumer
 
 KAFKA_SERVER = "kafka:9092"
 KAFKA_TOPIC = "github-repo"
+MAX_CSV_FILES = 10
 
 # s3 = boto3.client('s3', aws_access_key_id='<enteryouraccesskey', aws_secret_access_key='<enteryoursecretkey>')
 # bucket_name = '<add your bucket name>'
 
 CSV_HEADERS = ['name', 'full_name', 'html_url', 'description', 'stars', 'forks', 'language', 'created_at', 'updated_at', 'open_issues']
-CSV_DIRECTORY =  "/app/csv_data"
+CSV_DIRECTORY =  "/app/csv_data/"
 if not os.path.exists(CSV_DIRECTORY):
     os.makedirs(CSV_DIRECTORY)
 
@@ -37,6 +38,19 @@ def write_csv(csv_filename, data):
 #         print(f"File uploaded successfully: {key}")
 #     except Exception as e:
 #         print(f"Error uploading file: {e}")
+
+def manage_csv_files():
+    # Get all the files in the CSV directory
+    files = [f for f in os.listdir(CSV_DIRECTORY) if f.endswith('.csv')]
+    
+    # Sort the files by creation time (oldest first)
+    files.sort(key=lambda x: os.path.getctime(os.path.join(CSV_DIRECTORY, x)))
+
+    # If there are more than 10 files, delete the oldest one
+    if len(files) > MAX_CSV_FILES:
+        oldest_file = files[0]
+        os.remove(os.path.join(CSV_DIRECTORY, oldest_file))
+        print(f"Deleted old CSV file: {oldest_file}")
 
 if __name__ == "__main__":
     consumer = KafkaConsumer(KAFKA_TOPIC, 
@@ -68,6 +82,9 @@ if __name__ == "__main__":
             csv_filename = generate_csv_filename()
             print(csv_filename)
             write_csv(csv_filename, all_repo_data)
+
+            manage_csv_files()
+            
             # s3_key = f"csv_data/{os.path.basename(csv_filename)}"
             # upload_to_s3(csv_filename, bucket_name, s3_key)
             all_repo_data = []
