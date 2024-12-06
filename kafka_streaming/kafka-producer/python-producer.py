@@ -1,4 +1,6 @@
 #import datetime
+import os
+import csv
 import time
 import schedule
 import requests
@@ -21,6 +23,14 @@ page = 1
 per_page = 100
 
 GITHUB_REPOS_URL = f"https://api.github.com/search/repositories?q={query}&sort=stars&order=desc&page={page}&per_page={per_page}"
+
+def log_producer_time(time_diff):
+    trace_file = "app/producer_time_trace.csv"
+    # Check if the file exists to write headers only once
+    file_exists = os.path.exists(trace_file)
+    with open(trace_file, mode='a', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        writer.writerow([time_diff])
 
 def gen_data():
 
@@ -55,6 +65,8 @@ def gen_data():
   producer.flush()
 
   producer_endTime = time.time()
+  time_diff = producer_endTime-producer_startTime
+  log_producer_time(time_diff)
 
   print(f"Running the entire Kafka Producer takes: {str(producer_endTime-producer_startTime)} seconds")
 

@@ -2,19 +2,15 @@
 from json import loads
 import csv
 import os
+import time
 from datetime import datetime
 # from faker import Faker
 from kafka import KafkaConsumer
-# import boto3
 
 KAFKA_SERVER = "kafka:9092"
 KAFKA_TOPIC = "github-repo"
 MAX_CSV_FILES = 10
 
-# s3 = boto3.client('s3', aws_access_key_id='<enteryouraccesskey', aws_secret_access_key='<enteryoursecretkey>')
-# bucket_name = '<add your bucket name>'
-
-# CSV_HEADERS = ['name', 'full_name', 'html_url', 'description', 'stars', 'forks', 'language', 'created_at', 'updated_at', 'open_issues']
 CSV_HEADERS = ['Id','Name','FullName','HtmlUrl','Description','Language','CreatedAt','UpdatedAt','PushedAt','OpenIssuesCount','ForksCount','StargazersCount','WatchersCount','Size','OwnerLogin','OwnerType','License']
 
 CSV_DIRECTORY =  "/app/csv_data/"
@@ -34,12 +30,13 @@ def write_csv(csv_filename, data):
         writer.writeheader()
         writer.writerows(data)
 
-# def upload_to_s3(file_path, bucket, key):
-#     try:
-#         s3.upload_file(file_path, bucket, key)
-#         print(f"File uploaded successfully: {key}")
-#     except Exception as e:
-#         print(f"Error uploading file: {e}")
+def log_consumer_time(time_diff):
+    trace_file = "app/consumer_time_trace.csv"
+    # Check if the file exists to write headers only once
+    file_exists = os.path.exists(trace_file)
+    with open(trace_file, mode='a', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        writer.writerow([time_diff])
 
 def manage_csv_files():
     # Get all the files in the CSV directory
@@ -55,6 +52,7 @@ def manage_csv_files():
         print(f"Deleted old CSV file: {oldest_file}")
 
 if __name__ == "__main__":
+
     consumer = KafkaConsumer(KAFKA_TOPIC, 
                             bootstrap_servers=KAFKA_SERVER, 
                             group_id='groupdId-919292',
@@ -63,23 +61,14 @@ if __name__ == "__main__":
 
     all_repo_data = []
     print("Consumer started")
-    try:
+
+    try:    
+
         for message in consumer:
+            message_startTime = time.time()
             repo_info = message.value
 
             for repo in repo_info:
-                # repo_data = {
-                #     'id': repo['id'],
-                #     'name': repo.get('name'),
-                #     'full_name': repo.get('full_name'),
-                #     'description': repo.get('description'),
-                #     'stars': repo.get('stargazers_count'),
-                #     'forks': repo.get('forks_count'),
-                #     'language': repo.get('language'),
-                #     'created_at': repo.get('created_at'),
-                #     'updated_at': repo.get('updated_at'),
-                #     'open_issues': repo.get('open_issues_count')
-                # }
 
                 repo_data = {
                     'Id': repo['id'],
@@ -109,12 +98,14 @@ if __name__ == "__main__":
 
             manage_csv_files()
             
-            # s3_key = f"csv_data/{os.path.basename(csv_filename)}"
-            # upload_to_s3(csv_filename, bucket_name, s3_key)
             all_repo_data = []
+
+            message_endTime = time.time()
+            time_diff = message_endTime - message_startTime
+            log_consumer_time(time_diff)
+        
     except KeyboardInterrupt:
         print("Consumer stopped")
     finally:
         # Close the consumer
         consumer.close()
-    

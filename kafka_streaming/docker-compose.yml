@@ -26,13 +26,15 @@ services:
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       JMX_PORT: 10000
-     
+
     networks:
       - bridge
     container_name: kafka
 
   kafka-producer:
     image: kafka-producer
+    volumes:
+      - .:/app
     depends_on:
       - kafka
     environment:
@@ -47,6 +49,7 @@ services:
     image: github-consumer
     volumes:
       - ./csv_data:/app/csv_data
+      - .:/app
     depends_on:
       - kafka
     environment:
