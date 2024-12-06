@@ -1,10 +1,9 @@
-#import datetime
 from json import loads
 import csv
 import os
 import time
 from datetime import datetime
-# from faker import Faker
+
 from kafka import KafkaConsumer
 
 # Define constants for Kafka server and topic
