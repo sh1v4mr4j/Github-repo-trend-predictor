@@ -1,0 +1,60 @@
+version: "3.9"
+
+networks:
+  bridge:
+    driver: bridge
+
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 32181
+      ZOOKEEPER_TICK_TIME: 2000
+    networks:
+      - bridge
+    container_name: zookeeper
+
+  kafka:
+    image: confluentinc/cp-kafka
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ADVERTISED_HOST_NAME: 0.0.0.0
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:32181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      JMX_PORT: 10000
+    networks:
+      - bridge
+    container_name: kafka
+
+  kafka-producer:
+    image: kafka-producer
+    depends_on:
+      - kafka
+    environment:
+      KAFKA_SERVER: "kafka:9092"
+      ZOOKEEPER_SERVER: "zookeeper:32181"
+      PRODUCER_INTERVAL: 100
+    networks:
+      - bridge
+    container_name: kafka-producer
+
+  github-consumer:
+    image: github-consumer
+    volumes:
+      - ./csv_data:/app/csv_data
+    depends_on:
+      - kafka
+    environment:
+      KAFKA_SERVER: "kafka:9092"
+      ZOOKEEPER_SERVER: "zookeeper:32181"
+      PRODUCER_INTERVAL: 100
+    networks:
+      - bridge
+    container_name: github-consumer
+
+volumes:
+  settings:
+  data:

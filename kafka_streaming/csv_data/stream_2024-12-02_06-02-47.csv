@@ -1,0 +1,101 @@
+name,full_name,html_url,description,stars,forks,language,created_at,updated_at,open_issues
+tailwindcss,tailwindlabs/tailwindcss,,A utility-first CSS framework for rapid UI development.,83581,4229,TypeScript,2017-10-06T14:59:14Z,2024-12-02T06:01:24Z,120
+kong,Kong/kong,,🦍 The Cloud-Native API Gateway and AI Gateway.,39395,4831,Lua,2014-11-17T23:56:08Z,2024-12-02T06:02:26Z,133
+Paddle,PaddlePaddle/Paddle,,PArallel Distributed Deep LEarning: Machine Learning Framework from Industrial Practice （『飞桨』核心框架，深度学习&机器学习高性能单机、分布式训练和跨平台部署）,22300,5623,C++,2016-08-15T06:59:08Z,2024-12-02T06:00:54Z,1831
+chromium,chromium/chromium,,The official GitHub mirror of the Chromium source,19340,7114,C++,2018-02-05T20:55:32Z,2024-12-02T06:02:30Z,102
+MaxKB,1Panel-dev/MaxKB,,🚀 MaxKB 是一款基于大语言模型和 RAG 的开源知识库问答系统，广泛应用于智能客服、企业内部知识库、学术研究与教育等场景。,11741,1538,Python,2023-09-14T02:05:12Z,2024-12-02T06:02:06Z,95
+NotionNext,tangly1024/NotionNext,,"使用 NextJS + Notion API 实现的，支持多种部署方案的静态博客，无需服务器、零门槛搭建网站，为Notion和所有创作者设计。 (A static blog built with NextJS and Notion API, supporting multiple deployment options. No server required, zero threshold to set up a website. Designed for Notion and all creators.)",8004,10992,JavaScript,2021-09-26T07:23:22Z,2024-12-02T06:02:03Z,262
+Sylius,Sylius/Sylius,,Open Source eCommerce Framework on Symfony,7954,2096,PHP,2011-11-05T22:05:52Z,2024-12-02T06:01:55Z,244
+sea-orm,SeaQL/sea-orm,,🐚 An async & dynamic ORM for Rust,7440,522,Rust,2021-02-09T07:16:15Z,2024-12-02T06:01:28Z,174
+V2ray-Configs,barry-far/V2ray-Configs,,"🛰️✨ Free V2ray Configs , Updating Every 10 minutes.",4882,926,Python,2023-09-17T09:39:01Z,2024-12-02T06:02:36Z,1
+lmdeploy,InternLM/lmdeploy,,"LMDeploy is a toolkit for compressing, deploying, and serving LLMs.",4741,432,Python,2023-06-15T12:38:06Z,2024-12-02T06:01:09Z,333
+openmv,openmv/openmv,,OpenMV Camera Module,2440,1138,C,2013-11-13T10:23:44Z,2024-12-02T06:02:14Z,61
+TTKMusicPlayer,Greedysky/TTKMusicPlayer,,"TTKMusicPlayer imitates Kugou UI, the music player uses of qmmp core library based on Qt for windows and linux.",2304,421,C++,2015-05-07T10:15:14Z,2024-12-02T06:01:31Z,5
+aws-sdk-net,aws/aws-sdk-net,,"The official AWS SDK for .NET. For more information on the AWS SDK for .NET, see our web site:",2070,863,C#,2012-01-23T23:50:43Z,2024-12-01T23:18:44Z,105
+IPDB,ymyuuu/IPDB,,Cloudflare反代优选IP库,1560,552,,2023-11-13T06:02:16Z,2024-12-02T06:02:28Z,8
+Awesome-Efficient-LLM,horseee/Awesome-Efficient-LLM,,A curated list for Efficient Large Language Models,1297,93,Python,2023-05-22T07:07:49Z,2024-12-02T06:02:28Z,3
+eth-phishing-detect,MetaMask/eth-phishing-detect,,Utility for detecting phishing domains targeting Web3 users,1106,957,TypeScript,2017-08-03T01:57:18Z,2024-12-02T06:02:11Z,49
+samba,samba-team/samba,,https://gitlab.com/samba-team/samba is the Official GitLab mirror of https://git.samba.org/samba.git   --   Merge requests should be made on GitLab (not on GitHub),924,437,C,2015-07-10T22:44:24Z,2024-12-02T06:01:49Z,0
+socks5_list,hookzof/socks5_list,,Auto-updated SOCKS5 proxy list + proxies for Telegram,710,165,,2019-08-07T00:10:58Z,2024-12-02T06:01:07Z,1
+engine_web-ifc,ThatOpen/engine_web-ifc,,"Reading and writing IFC files with Javascript, at native speeds.",637,204,TypeScript,2020-12-05T13:42:12Z,2024-12-02T06:02:42Z,46
+mpc-qt,mpc-qt/mpc-qt,,Media Player Classic Qute Theater,479,32,C++,2021-07-06T11:48:59Z,2024-12-02T06:01:50Z,24
+thmsgbrt,thmsgbrt/thmsgbrt,,My awesome README.md,465,1019,Mustache,2020-07-12T21:50:01Z,2024-12-02T06:01:29Z,9
+react-nprogress,tanem/react-nprogress,,:hourglass: A React primitive for building slim progress bars.,440,19,TypeScript,2018-09-30T17:28:01Z,2024-12-02T06:02:11Z,2
+Paradise,ParadiseSS13/Paradise,,Paradise Station's GitHub main repository.,407,1211,DM,2014-11-29T00:16:54Z,2024-12-02T06:00:50Z,711
+cardano-token-registry,cardano-foundation/cardano-token-registry,,,276,1714,Nix,2021-02-17T16:26:59Z,2024-12-02T06:02:02Z,13
+stargaze,public-awesome/stargaze,,Stargaze Cosmos proof-of-stake blockchain,255,94,Go,2020-03-26T19:48:43Z,2024-12-02T06:02:34Z,21
+MindustryMods,Anuken/MindustryMods,,A public auto-generated list of mods used in Mindustry. Updates every 2 hours.,246,59,Java,2019-12-14T02:14:57Z,2024-12-02T06:01:13Z,0
+proxies,ErcinDedeoglu/proxies,,"🔍💻🔒🌀🔄🌟🚀📂📈 Need a daily updated proxy list? Look no further! Our PROXY list offers the freshest and most reliable proxy servers available. Say goodbye to outdated and unreliable lists and hello to a seamless, secure browsing experience. Get started with our PROXY list today!",239,17,,2022-11-23T08:33:21Z,2024-12-02T06:01:09Z,0
+cairo-book,cairo-book/cairo-book,,"The Cairo Programming Language Book, a comprehensive documentation of the Cairo 1 programming language.",235,227,JavaScript,2023-03-29T12:23:02Z,2024-12-02T06:01:50Z,18
+hongbomiao.com,hongbo-miao/hongbomiao.com,,🦋 A personal research and development (R&D) lab that facilitates the sharing of knowledge.,220,35,HCL,2019-02-27T01:47:30Z,2024-12-02T06:01:24Z,12
+iptv,fenxp/iptv,,自动采集与互联网IPTV,212,37,HTML,2023-12-06T12:03:17Z,2024-12-02T06:01:17Z,0
+awesome-mcp-servers,wong2/awesome-mcp-servers,,A curated list of Model Context Protocol (MCP) servers,194,9,,2024-11-28T12:27:45Z,2024-12-02T06:01:54Z,0
+asset-portal,defold/asset-portal,,"List of Defold assets, libraries and extensions",179,35,Python,2019-08-28T06:43:40Z,2024-12-02T06:01:16Z,9
+dde-control-center,linuxdeepin/dde-control-center,,Control panel of Deepin Desktop Environment.,177,131,C++,2013-11-06T07:23:41Z,2024-12-02T06:02:20Z,2
+SimpleTweaksPlugin,Caraxi/SimpleTweaksPlugin,,,162,142,C#,2020-10-03T23:42:45Z,2024-12-02T06:01:51Z,226
+hub,crowdsecurity/hub,,Main repository for crowdsec scenarios/parsers,162,151,Python,2020-05-05T07:19:59Z,2024-12-02T06:01:27Z,129
+leech,kemayo/leech,,Turn a story on certain websites into an ebook for convenient reading,159,25,Python,2013-12-24T08:33:42Z,2024-12-02T06:01:54Z,18
+os,armbian/os,,Armbian operating system rolling releases provides automated nightly builds of maintained targets,159,62,Shell,2023-02-20T05:40:00Z,2024-12-02T06:01:27Z,3
+MovieDB,WirelessAlien/MovieDB,,ShowCase is a fully open-source android application for exploring and organizing your personal collection of films and television series.,139,5,Kotlin,2024-04-12T17:44:33Z,2024-12-02T06:02:18Z,12
+MEV-UniswapBot,engSophia5x3/MEV-UniswapBot,,"MEV Uniswap Bot – A sophisticated bot built for executing MEV-based trading strategies, including sandwich attacks, on Uniswap. Maximizes profitability with high security and compatibility across EVM networks. Perfect for traders and developers looking to capitalize on Ethereum's mempool opportunities and automated trading solutions.",130,98,Python,2024-11-20T08:16:02Z,2024-12-02T06:01:55Z,0
+website-hot-hub,cxyfreedom/website-hot-hub,,记录 36Kr、bilibili、抖音、掘金、微信读书平台从 2023-10-25 日至今的热点榜。每小时抓取一次数据，按天归档。,119,19,Python,2023-10-25T14:31:11Z,2024-12-02T06:01:26Z,0
+scoop-lemon,hoilc/scoop-lemon,,🍋Yet Another Personal Bucket for Scoop,118,15,PowerShell,2020-07-18T17:35:58Z,2024-12-02T06:01:40Z,1
+UninvitedActivity,UninvitedActivity/UninvitedActivity,,An attempt at creating some kind of auto-updating IP address blocklist,115,1,Shell,2023-09-25T10:33:21Z,2024-12-02T06:01:45Z,0
+op-analytics,ethereum-optimism/op-analytics,,"Onchain Data, Utilities, References, and other Analytics on Optimism",111,51,Jupyter Notebook,2023-02-08T13:30:13Z,2024-12-02T06:02:41Z,22
+phishfort-lists,phishfort/phishfort-lists,,Blacklists and whitelists maintained by PhishFort,106,72,JavaScript,2018-10-04T09:21:24Z,2024-12-02T06:01:58Z,1198
+RAPatches,RetroAchievements/RAPatches,,Patch repo for RetroAchievements.,98,54,JavaScript,2021-01-13T06:09:14Z,2024-12-02T06:01:32Z,5
+ratpstatus,wincelau/ratpstatus,,"Page de suivi et d'historisation de l'état du trafic des Ⓜ️ Métros, 🚆 RER / Transiliens et 🚈 Tramways d'Île de France",98,4,HTML,2024-04-22T21:47:18Z,2024-12-02T06:02:13Z,2
+labyrinth,CERTCC/labyrinth,,"Come inside, and have a nice cup of tea.",98,35,,2021-08-19T18:15:53Z,2024-12-02T06:01:25Z,12
+VoiceConversionLab,tarepan/VoiceConversionLab,,Collect Voice Conversion researches,91,7,TypeScript,2019-12-29T20:35:34Z,2024-12-02T06:00:48Z,108
+current-song2,Nerixyz/current-song2,,Display the currently playing song/audio.,91,7,TypeScript,2021-08-20T10:02:43Z,2024-12-02T06:01:56Z,30
+nicolas-hoizey.com,nhoizey/nicolas-hoizey.com,,"The personal website/blog from Nicolas Hoizey, built with https://pack11ty.dev/",91,35,JavaScript,2014-11-06T20:35:24Z,2024-12-02T06:02:40Z,129
+PaiGram,PaiGramTeam/PaiGram,,"telegram robot, query the official genshin information",85,24,Python,2022-04-14T06:44:08Z,2024-12-02T06:01:15Z,19
+build-scripts,ppc64le/build-scripts,,Build scripts for open source projects on Linux on POWER LE,79,247,Shell,2017-02-06T23:48:15Z,2024-12-02T06:01:14Z,512
+codeaurora-releases-tracker,androidtrackers/codeaurora-releases-tracker,,Tracking CAF new releases,78,4,Python,2018-10-23T14:54:30Z,2024-12-02T06:01:22Z,1
+PiRIS,kolei/PiRIS,,Проектирование и Разработка Информационных Систем,78,33,C#,2020-09-01T14:26:36Z,2024-12-02T06:01:14Z,1
+Proxy-List-World,themiralay/Proxy-List-World,,ICE Proxy list produces new proxies by collectively scanning the entire open source list in the world. Proxies are updated every 2 - 3 minutes. New Proxy sources will be added day by day. The list is always open source.,75,7,,2023-12-05T20:42:59Z,2024-12-02T06:01:23Z,3
+UnifontEX,stgiga/UnifontEX,,An extended fork of GNU Unifont with a focus on high compatibility.,73,1,C,2023-08-12T23:27:46Z,2024-12-02T06:01:30Z,4
+wca-live,thewca/wca-live,,Platform for running WCA competitions and sharing live results with the world,71,24,Elixir,2019-07-28T10:42:28Z,2024-12-02T06:00:54Z,39
+Dependency,CodeEditorLand/Dependency,,🖇️ Dependency —,67,1,Shell,2023-10-28T23:33:22Z,2024-12-02T06:02:28Z,0
+feedstocks,conda-forge/feedstocks,,"All conda-forge feedstocks, in one convenient place",63,35,,2016-01-13T09:09:47Z,2024-12-02T06:02:41Z,0
+MEV-BOT-web3,JaredMEV2/MEV-BOT-web3,,The source code of my MEV-bot 2 Upgrade. Instructions and access in the Readme description and on the website,60,50,Solidity,2024-11-20T08:15:03Z,2024-12-02T06:02:13Z,0
+tnf,umijs/tnf,,,59,15,TypeScript,2024-10-28T06:43:13Z,2024-12-02T06:01:11Z,13
+efax,NeilGirdhar/efax,,Exponential families for JAX,57,4,Python,2020-03-24T05:44:07Z,2024-12-02T06:01:18Z,9
+ppf-contact-solver,st-tech/ppf-contact-solver,,"A contact solver for physics-based simulations involving 👚 shells, 🪵 solids and 🪢 rods.",54,0,Cuda,2024-11-21T02:20:52Z,2024-12-02T06:01:14Z,0
+C2R,CNMan/C2R,,,45,4,Shell,2018-04-05T02:53:05Z,2024-12-02T06:01:05Z,1
+MAVSDK-Proto,mavlink/MAVSDK-Proto,,Collection of proto files used by gRPC in MAVSDK,43,93,Python,2017-12-08T15:57:31Z,2024-12-02T06:01:25Z,9
+mcbroken-archive,rashiq/mcbroken-archive,,🍦 Historical Archive of my website mcbroken.com,43,4,Shell,2021-03-18T00:40:00Z,2024-12-02T06:02:06Z,1
+CertStream-Domains,Azathothas/CertStream-Domains,,[Automated | UpToDate] Daily Dumps of CertStream Certificate Logs Subdomains Data (SAN || CN),40,8,,2023-10-18T07:12:43Z,2024-12-02T06:01:53Z,1
+gitdm,cncf/gitdm,,📜Fork for tracking CNCF projects,39,424,Ruby,2023-03-30T07:50:40Z,2024-12-02T06:02:36Z,5
+skeleton,getparthenon/skeleton,,The Symfony SaaS boilerplate Skeleton Application,36,5,PHP,2022-08-24T10:29:25Z,2024-12-02T06:02:28Z,0
+bsc-predict-updater,bsc-predict/bsc-predict-updater,,PancakeSwap Prediction Market raw round data,35,13,Python,2021-08-09T00:02:07Z,2024-12-02T06:00:53Z,1
+nasa-wildfires,datadesk/nasa-wildfires,,Download wildfire hotspots detected by NASA satellites and the Fire Information for Resource Management System (FIRMS),34,6,Python,2019-06-24T21:15:22Z,2024-12-02T06:02:37Z,1
+aws-iam-actions-list,TryTryAgain/aws-iam-actions-list,,A list of all known Amazon Web Services' IAM actions; and a way of updating that list.,31,7,Shell,2021-10-18T02:08:24Z,2024-12-02T06:02:08Z,1
+qtlanguageserver,qt/qtlanguageserver,,An implementation of the Language Server Protocol,30,16,C++,2020-01-23T14:13:51Z,2024-12-02T06:01:52Z,0
+GX-Mods-Extension,noblereign/GX-Mods-Extension,,"A WebExtension for Firefox. Add ambient music, typing sounds, and more to your browsing experience.",29,3,JavaScript,2023-10-22T03:45:23Z,2024-12-02T06:01:41Z,6
+backend-scoreboard,onnx/backend-scoreboard,,Scoreboard for ONNX Backend Compatibility,27,28,Python,2018-08-10T18:08:12Z,2024-12-02T06:02:01Z,7
+clipboard-history,ayoung19/clipboard-history,,"A Chrome extension for managing your clipboard history securely, efficiently, and effortlessly.",25,5,TypeScript,2024-03-22T05:05:50Z,2024-12-02T06:01:42Z,13
+qtimageformats,qt/qtimageformats,,Additional Image Format plugins for Qt,25,57,C++,2013-05-06T07:27:12Z,2024-12-02T06:02:08Z,0
+ris-backend-service,digitalservicebund/ris-backend-service,,RIS Caselaw,24,9,Java,2022-04-05T14:27:32Z,2024-12-02T06:02:28Z,5
+aiku,inikoo/aiku,,White-label opinionated ERP web app,24,1,PHP,2022-08-09T09:07:57Z,2024-12-02T06:01:25Z,229
+adventofcode,James-Ansley/adventofcode,,My solutions to the Advent of Code challenges,23,2,Python,2020-12-09T21:45:48Z,2024-12-02T06:01:07Z,0
+devfestahm,GDGAhmedabad/devfestahm,,GDG Ahmedabad DevFest website,21,137,TypeScript,2019-08-13T19:00:45Z,2024-12-02T06:02:26Z,4
+learn-git-mastery,HashimThePassionate/learn-git-mastery,,"The Ultimate Git Mastery Repository is your go-to guide for mastering Git. With clear tutorials, practical exercises, and real-world examples, it's perfect for beginners and experienced developers alike. From basic commands to advanced techniques like collaboration and branching, this repository has everything you need to level up your Git skills.",21,2,,2023-12-05T07:41:27Z,2024-12-02T06:01:50Z,0
+accuweather,bieniu/accuweather,,Python wrapper for getting weather data from AccuWeather servers for Limited Trial package.,20,7,Python,2020-06-18T16:08:28Z,2024-12-02T06:02:21Z,1
+wcag-act-rules,w3c/wcag-act-rules,,WCAG Conformance Test Rules,19,16,HTML,2017-09-07T10:46:29Z,2024-12-02T06:02:24Z,42
+qtcoap,qt/qtcoap,,Qt CoAP client module,18,16,C++,2017-10-16T14:01:52Z,2024-12-02T06:02:03Z,0
+SevenKewp,wootguy/SevenKewp,,Half-Life Co-op mod,18,5,C++,2020-11-18T04:54:08Z,2024-12-02T06:00:51Z,10
+DeployerIDE-ERC20-Toolkit,oadfade/DeployerIDE-ERC20-Toolkit,,"DeployerIDE – a dedicated local platform for creating and deploying ERC-20 smart contracts. A powerful, secure alternative to RemixIDE, providing advanced tools for Ethereum and EVM-based contract development in a private, offline environment.",17,15,Python,2024-11-12T18:45:36Z,2024-12-02T06:01:50Z,1
+example-package,slsa-framework/example-package,,,17,25,TypeScript,2022-04-27T19:30:43Z,2024-12-02T06:02:34Z,37
+qtactiveqt,qt/qtactiveqt,,ActiveQt,17,31,C++,2013-05-06T06:01:06Z,2024-12-02T06:01:42Z,0
+inverse-web,InverseFinance/inverse-web,,,17,17,TypeScript,2021-06-09T20:08:35Z,2024-12-02T06:01:00Z,6
+foggy-bot,dbreunig/foggy-bot,,A simple weather website for Downtown San Francisco.,16,2,Python,2024-10-29T16:55:18Z,2024-12-02T06:02:07Z,0
+TestnetProtocol,exorde-labs/TestnetProtocol,,,16,19,Solidity,2022-07-06T10:44:29Z,2024-12-02T06:02:16Z,0
+sqxclib,chhuang-one/sqxclib,,"sqxclib is a library to convert data between C language and SQL, JSON, etc. It provides ORM features and C++ wrapper.",16,4,C++,2020-07-16T17:39:40Z,2024-12-02T06:01:34Z,0
+best_cf_ip,darkqiank/best_cf_ip,,cf ip 优选,15,3,Python,2024-06-24T02:29:41Z,2024-12-02T06:01:28Z,0
+oclapi2,OpenConceptLab/oclapi2,,OCL Terminology Service v2 in python/django,15,32,Python,2020-06-05T16:23:50Z,2024-12-02T06:02:15Z,14
+Meadow_Issues,WildernessLabs/Meadow_Issues,,Public repo for bugs and issues with Meadow,15,0,,2019-01-18T21:08:59Z,2024-12-02T06:01:30Z,227
+nist-inject,opentimestamps/nist-inject,,"An injection of the NIST, ETH, LTC, and ZEC Random Beacons into Bitcoin",14,96,,2019-01-07T09:33:58Z,2024-12-02T06:02:34Z,0
+v2ray-configs,SoliSpirit/v2ray-configs,,"V2Ray configs for multiple protocols and countries, updated every 15 minutes for fast, secure connections!",14,0,,2024-11-10T13:02:47Z,2024-12-02T06:02:42Z,0
+2m4u,2M4U/2m4u,,"Welcome Github User to the Code Land of 2M4U (me), What you see below is a future project for updating my In-Game Fortnite Statistics, Feel free to Fork this repository If you wish to see how this works.",14,10,JavaScript,2022-03-02T15:57:55Z,2024-12-02T06:01:01Z,7
+ProxyPool,CNMengHan/ProxyPool,,Continuously update the latest anonymous proxy nodes in real-time.,13,6,,2024-10-02T11:54:50Z,2024-12-02T06:01:01Z,0

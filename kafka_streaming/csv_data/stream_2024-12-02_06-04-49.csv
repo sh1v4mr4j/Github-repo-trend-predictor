@@ -1,0 +1,101 @@
+name,full_name,html_url,description,stars,forks,language,created_at,updated_at,open_issues
+tailwindcss,tailwindlabs/tailwindcss,,A utility-first CSS framework for rapid UI development.,83581,4229,TypeScript,2017-10-06T14:59:14Z,2024-12-02T06:01:24Z,120
+kong,Kong/kong,,🦍 The Cloud-Native API Gateway and AI Gateway.,39395,4831,Lua,2014-11-17T23:56:08Z,2024-12-02T06:02:26Z,133
+ruff,astral-sh/ruff,,"An extremely fast Python linter and code formatter, written in Rust.",33303,1111,Rust,2022-08-09T17:17:44Z,2024-12-02T06:03:00Z,1252
+Paddle,PaddlePaddle/Paddle,,PArallel Distributed Deep LEarning: Machine Learning Framework from Industrial Practice （『飞桨』核心框架，深度学习&机器学习高性能单机、分布式训练和跨平台部署）,22300,5623,C++,2016-08-15T06:59:08Z,2024-12-02T06:00:54Z,1831
+chromium,chromium/chromium,,The official GitHub mirror of the Chromium source,19340,7114,C++,2018-02-05T20:55:32Z,2024-12-02T06:02:30Z,102
+dataease,dataease/dataease,,🔥 人人可用的开源 BI 工具，Tableau、帆软的开源替代。,18402,3301,Java,2021-02-02T04:10:21Z,2024-12-02T06:04:10Z,379
+homebrew-core,Homebrew/homebrew-core,,🍻 Default formulae for the missing package manager for macOS (or Linux),13808,12479,Ruby,2016-03-01T06:58:36Z,2024-12-02T06:04:24Z,87
+MaxKB,1Panel-dev/MaxKB,,🚀 MaxKB 是一款基于大语言模型和 RAG 的开源知识库问答系统，广泛应用于智能客服、企业内部知识库、学术研究与教育等场景。,11741,1538,Python,2023-09-14T02:05:12Z,2024-12-02T06:02:06Z,95
+seatunnel,apache/seatunnel,,"SeaTunnel is a next-generation super high-performance, distributed, massive data integration tool.",8080,1830,Java,2017-08-05T09:14:47Z,2024-12-02T06:03:48Z,652
+NotionNext,tangly1024/NotionNext,,"使用 NextJS + Notion API 实现的，支持多种部署方案的静态博客，无需服务器、零门槛搭建网站，为Notion和所有创作者设计。 (A static blog built with NextJS and Notion API, supporting multiple deployment options. No server required, zero threshold to set up a website. Designed for Notion and all creators.)",8004,10992,JavaScript,2021-09-26T07:23:22Z,2024-12-02T06:02:03Z,262
+Sylius,Sylius/Sylius,,Open Source eCommerce Framework on Symfony,7954,2096,PHP,2011-11-05T22:05:52Z,2024-12-02T06:03:01Z,243
+sea-orm,SeaQL/sea-orm,,🐚 An async & dynamic ORM for Rust,7440,522,Rust,2021-02-09T07:16:15Z,2024-12-02T06:01:28Z,174
+V2ray-Configs,barry-far/V2ray-Configs,,"🛰️✨ Free V2ray Configs , Updating Every 10 minutes.",4882,926,Python,2023-09-17T09:39:01Z,2024-12-02T06:02:36Z,1
+lmdeploy,InternLM/lmdeploy,,"LMDeploy is a toolkit for compressing, deploying, and serving LLMs.",4741,432,Python,2023-06-15T12:38:06Z,2024-12-02T06:01:09Z,333
+kuma,kumahq/kuma,,"🐻 The multi-zone service mesh for containers, Kubernetes and VMs. Built with Envoy. CNCF Sandbox Project.",3675,335,Go,2019-03-13T13:20:13Z,2024-12-02T06:02:57Z,411
+openmv,openmv/openmv,,OpenMV Camera Module,2440,1138,C,2013-11-13T10:23:44Z,2024-12-02T06:02:14Z,61
+tilck,vvaltchev/tilck,,A Tiny Linux-Compatible Kernel,2379,103,C,2016-03-14T10:02:41Z,2024-12-02T06:04:09Z,2
+chromebrew,chromebrew/chromebrew,,Package manager for Chrome OS,2342,382,Ruby,2013-08-05T22:05:57Z,2024-12-02T06:03:47Z,113
+TTKMusicPlayer,Greedysky/TTKMusicPlayer,,"TTKMusicPlayer imitates Kugou UI, the music player uses of qmmp core library based on Qt for windows and linux.",2304,421,C++,2015-05-07T10:15:14Z,2024-12-02T06:01:31Z,5
+github-rank,jaywcjlove/github-rank,,"🕷️Github China/Global User Ranking, Global Warehouse Star Ranking (Github Action is automatically updated daily).",2141,159,EJS,2019-04-13T16:40:55Z,2024-12-02T06:04:36Z,10
+gentoo,gentoo/gentoo,,[MIRROR] Official Gentoo ebuild repository,2097,2029,Shell,2015-08-10T18:47:32Z,2024-12-02T06:03:59Z,835
+aws-sdk-net,aws/aws-sdk-net,,"The official AWS SDK for .NET. For more information on the AWS SDK for .NET, see our web site:",2070,863,C#,2012-01-23T23:50:43Z,2024-12-02T06:02:57Z,105
+IPDB,ymyuuu/IPDB,,Cloudflare反代优选IP库,1560,552,,2023-11-13T06:02:16Z,2024-12-02T06:02:28Z,8
+ModelingToolkit.jl,SciML/ModelingToolkit.jl,,An acausal modeling framework for automatically parallelized scientific machine learning (SciML) in Julia. A computer algebra system for integrated symbolics for physics-informed machine learning and automated transformations of differential equations,1434,209,Julia,2018-02-27T01:36:26Z,2024-12-02T06:04:31Z,368
+Awesome-Efficient-LLM,horseee/Awesome-Efficient-LLM,,A curated list for Efficient Large Language Models,1297,93,Python,2023-05-22T07:07:49Z,2024-12-02T06:04:19Z,2
+eth-phishing-detect,MetaMask/eth-phishing-detect,,Utility for detecting phishing domains targeting Web3 users,1106,957,TypeScript,2017-08-03T01:57:18Z,2024-12-02T06:04:17Z,49
+comfyui_LLM_party,heshengtao/comfyui_LLM_party,,"LLM Agent Framework in ComfyUI includes Omost,GPT-sovits, ChatTTS,GOT-OCR2.0, and FLUX prompt nodes,access to Feishu,discord,and adapts to all llms with similar openai / gemini / aisuite interfaces, such as o1,ollama, grok, qwen, GLM, deepseek, moonshot,doubao. Adapted to local llms, vlm, gguf such as llama-3.2, Linkage graphRAG / RAG",1074,96,Python,2024-04-13T13:42:49Z,2024-12-02T06:04:21Z,16
+samba,samba-team/samba,,https://gitlab.com/samba-team/samba is the Official GitLab mirror of https://git.samba.org/samba.git   --   Merge requests should be made on GitLab (not on GitHub),924,437,C,2015-07-10T22:44:24Z,2024-12-02T06:01:49Z,0
+socks5_list,hookzof/socks5_list,,Auto-updated SOCKS5 proxy list + proxies for Telegram,710,165,,2019-08-07T00:10:58Z,2024-12-02T06:01:07Z,1
+engine_web-ifc,ThatOpen/engine_web-ifc,,"Reading and writing IFC files with Javascript, at native speeds.",637,204,TypeScript,2020-12-05T13:42:12Z,2024-12-02T06:02:55Z,45
+crates.io-index,rust-lang/crates.io-index,,Registry index for crates.io,588,229,Roff,2014-11-04T23:26:38Z,2024-12-02T06:04:12Z,2
+zilla,aklivity/zilla,,"🦎 A multi-protocol edge & service proxy. Seamlessly interface web apps, IoT clients, & microservices to Apache Kafka® via declaratively defined, stateless APIs.",550,50,Java,2021-12-07T22:10:04Z,2024-12-02T06:04:32Z,149
+AdBlock-Acceleration,Silentely/AdBlock-Acceleration,,Accelerated subscription for international/China region ad filtering rules（国际/中国地区广告过滤规则的加速订阅）,489,58,Adblock Filter List,2020-04-07T12:30:17Z,2024-12-02T06:03:53Z,0
+mpc-qt,mpc-qt/mpc-qt,,Media Player Classic Qute Theater,479,32,C++,2021-07-06T11:48:59Z,2024-12-02T06:01:50Z,24
+SmokeDetector,Charcoal-SE/SmokeDetector,,Headless chatbot that detects spam and posts links to it in chatrooms for quick deletion.,476,182,Python,2014-01-30T20:29:37Z,2024-12-02T06:04:03Z,71
+dotnet,dotnet/dotnet,,Home of .NET's Virtual Monolithic Repository which includes all the code needed to build the .NET SDK from source,476,126,C#,2022-10-13T14:09:52Z,2024-12-02T06:02:46Z,0
+cht-core,medic/cht-core,,"The CHT Core Framework makes it faster to build responsive, offline-first digital health apps that equip health workers to provide better care in their communities. It is a central resource of the Community Health Toolkit.",468,218,JavaScript,2011-11-02T23:19:55Z,2024-12-02T06:04:21Z,638
+thmsgbrt,thmsgbrt/thmsgbrt,,My awesome README.md,465,1019,Mustache,2020-07-12T21:50:01Z,2024-12-02T06:01:29Z,9
+react-nprogress,tanem/react-nprogress,,:hourglass: A React primitive for building slim progress bars.,440,19,TypeScript,2018-09-30T17:28:01Z,2024-12-02T06:02:11Z,2
+voron_canbus,Esoterical/voron_canbus,,,426,59,Shell,2023-02-25T00:55:50Z,2024-12-02T06:03:35Z,18
+Paradise,ParadiseSS13/Paradise,,Paradise Station's GitHub main repository.,407,1211,DM,2014-11-29T00:16:54Z,2024-12-02T06:00:50Z,711
+openbmclapi,bangbang93/openbmclapi,,BMCLAPI@Home,337,33,TypeScript,2019-08-06T06:14:47Z,2024-12-02T06:03:28Z,4
+trackiam,glassechidna/trackiam,,"A project to collate IAM actions, AWS APIs and managed policies from various public sources.",291,23,Go,2019-10-20T06:08:36Z,2024-12-02T06:04:26Z,18
+cardano-token-registry,cardano-foundation/cardano-token-registry,,,276,1714,Nix,2021-02-17T16:26:59Z,2024-12-02T06:04:22Z,10
+cloud-provider-azure,kubernetes-sigs/cloud-provider-azure,,Cloud provider for Azure,265,274,Go,2018-03-21T06:25:16Z,2024-12-02T06:03:03Z,27
+stargaze,public-awesome/stargaze,,Stargaze Cosmos proof-of-stake blockchain,255,94,Go,2020-03-26T19:48:43Z,2024-12-02T06:02:34Z,17
+hideip.me,zloi-user/hideip.me,,  proxy list that updates every 10 minutes,253,13,,2023-07-06T20:20:23Z,2024-12-02T06:04:34Z,0
+MindustryMods,Anuken/MindustryMods,,A public auto-generated list of mods used in Mindustry. Updates every 2 hours.,246,59,Java,2019-12-14T02:14:57Z,2024-12-02T06:01:13Z,0
+proxies,ErcinDedeoglu/proxies,,"🔍💻🔒🌀🔄🌟🚀📂📈 Need a daily updated proxy list? Look no further! Our PROXY list offers the freshest and most reliable proxy servers available. Say goodbye to outdated and unreliable lists and hello to a seamless, secure browsing experience. Get started with our PROXY list today!",239,17,,2022-11-23T08:33:21Z,2024-12-02T06:01:09Z,0
+cairo-book,cairo-book/cairo-book,,"The Cairo Programming Language Book, a comprehensive documentation of the Cairo 1 programming language.",235,227,JavaScript,2023-03-29T12:23:02Z,2024-12-02T06:01:50Z,18
+automate,chef/automate,,"Chef Automate provides a full suite of enterprise capabilities for maintaining continuous visibility into application, infrastructure, and security automation. ",227,113,Go,2019-04-03T15:26:38Z,2024-12-02T06:03:26Z,1151
+hongbomiao.com,hongbo-miao/hongbomiao.com,,🦋 A personal research and development (R&D) lab that facilitates the sharing of knowledge.,220,35,HCL,2019-02-27T01:47:30Z,2024-12-02T06:01:24Z,12
+pi-nexus-autonomous-banking-network,KOSASIH/pi-nexus-autonomous-banking-network,,"A decentralized, AI-driven system accelerating the Open Mainet Pi Network, connecting global banks for secure, efficient, and autonomous transactions.",218,38,Python,2024-05-09T12:25:00Z,2024-12-02T06:03:57Z,1081
+iptv,fenxp/iptv,,自动采集与互联网IPTV,212,37,HTML,2023-12-06T12:03:17Z,2024-12-02T06:01:17Z,0
+pasvulkan,BeRo1985/pasvulkan,,"Vulkan header generator, OOP-style API wrapper, framework and prospective Vulkan-based game engine for Object Pascal",194,32,Pascal,2016-02-22T23:25:51Z,2024-12-02T06:03:33Z,8
+awesome-mcp-servers,wong2/awesome-mcp-servers,,A curated list of Model Context Protocol (MCP) servers,194,9,,2024-11-28T12:27:45Z,2024-12-02T06:01:54Z,0
+asset-portal,defold/asset-portal,,"List of Defold assets, libraries and extensions",179,35,Python,2019-08-28T06:43:40Z,2024-12-02T06:01:16Z,9
+selenium-webdriver-java,bonigarcia/selenium-webdriver-java,,"Examples of the O'Reilly book ""Hands-On Selenium WebDriver with Java""",178,98,Java,2019-12-11T17:14:07Z,2024-12-02T06:03:20Z,1
+dde-control-center,linuxdeepin/dde-control-center,,Control panel of Deepin Desktop Environment.,177,131,C++,2013-11-06T07:23:41Z,2024-12-02T06:02:20Z,2
+voicenotify,pilot51/voicenotify,,Android app that speaks notifications,166,57,Kotlin,2012-10-14T10:39:31Z,2024-12-02T06:04:42Z,48
+dream-html,yawaramin/dream-html,,"Render HTML, SVG, MathML, htmx markup from your OCaml app",164,14,OCaml,2023-04-22T00:47:10Z,2024-12-02T06:04:06Z,2
+SimpleTweaksPlugin,Caraxi/SimpleTweaksPlugin,,,162,142,C#,2020-10-03T23:42:45Z,2024-12-02T06:01:51Z,226
+hub,crowdsecurity/hub,,Main repository for crowdsec scenarios/parsers,162,151,Python,2020-05-05T07:19:59Z,2024-12-02T06:01:27Z,129
+leech,kemayo/leech,,Turn a story on certain websites into an ebook for convenient reading,159,25,Python,2013-12-24T08:33:42Z,2024-12-02T06:01:54Z,18
+os,armbian/os,,Armbian operating system rolling releases provides automated nightly builds of maintained targets,159,62,Shell,2023-02-20T05:40:00Z,2024-12-02T06:01:27Z,3
+MuYun,ximatai/MuYun,,一个云原生、开发者优先、前后端分离、按需插拔的轻代码平台。,154,19,Java,2024-07-18T07:56:46Z,2024-12-02T06:04:45Z,0
+rust-analyzer.vs,kitamstudios/rust-analyzer.vs,,Rust language support for Visual Studio 2022,152,11,C#,2023-01-09T00:52:32Z,2024-12-02T06:04:28Z,18
+nixos-configs,reckenrode/nixos-configs,,My NixOS and nix-darwin configs,147,2,Nix,2021-03-12T00:54:57Z,2024-12-02T06:03:55Z,0
+MovieDB,WirelessAlien/MovieDB,,ShowCase is a fully open-source android application for exploring and organizing your personal collection of films and television series.,139,5,Kotlin,2024-04-12T17:44:33Z,2024-12-02T06:02:18Z,12
+wmyblog,taizihuang/wmyblog,,王孟源的博客镜像【可搜索】，每 6 小时更新,134,29,HTML,2020-11-19T00:11:30Z,2024-12-02T06:04:43Z,2
+MEV-UniswapBot,engSophia5x3/MEV-UniswapBot,,"MEV Uniswap Bot – A sophisticated bot built for executing MEV-based trading strategies, including sandwich attacks, on Uniswap. Maximizes profitability with high security and compatibility across EVM networks. Perfect for traders and developers looking to capitalize on Ethereum's mempool opportunities and automated trading solutions.",130,98,Python,2024-11-20T08:16:02Z,2024-12-02T06:03:26Z,0
+th06,happyhavoc/th06,,Decompilation of 東方紅魔郷　～ the Embodiment of Scarlet Devil (1.02h),122,10,C++,2023-08-20T17:20:50Z,2024-12-02T06:03:42Z,5
+PatrowlHearsData,Patrowl/PatrowlHearsData,,"Open-Source Vulnerability Intelligence Center - Unified source of vulnerability, exploit and threat Intelligence feeds",121,35,Python,2020-12-15T12:55:58Z,2024-12-02T06:04:44Z,8
+carbon-identity-framework,wso2/carbon-identity-framework,,,120,542,Java,2016-02-23T04:20:26Z,2024-12-02T06:03:53Z,94
+ResForge,andrews05/ResForge,,Resource editor for macOS,120,8,Swift,2020-04-10T01:19:33Z,2024-12-02T06:03:19Z,0
+website-hot-hub,cxyfreedom/website-hot-hub,,记录 36Kr、bilibili、抖音、掘金、微信读书平台从 2023-10-25 日至今的热点榜。每小时抓取一次数据，按天归档。,119,19,Python,2023-10-25T14:31:11Z,2024-12-02T06:01:26Z,0
+scoop-lemon,hoilc/scoop-lemon,,🍋Yet Another Personal Bucket for Scoop,118,15,PowerShell,2020-07-18T17:35:58Z,2024-12-02T06:03:22Z,1
+Lionkings-Http-Proxys-Proxies,saisuiu/Lionkings-Http-Proxys-Proxies,,A large number of free HTTP proxies updated every 10 minutes.Keep http/s proxies fresh at all times.,117,14,,2022-07-04T09:16:58Z,2024-12-02T06:04:22Z,0
+UninvitedActivity,UninvitedActivity/UninvitedActivity,,An attempt at creating some kind of auto-updating IP address blocklist,115,1,Shell,2023-09-25T10:33:21Z,2024-12-02T06:01:45Z,0
+op-analytics,ethereum-optimism/op-analytics,,"Onchain Data, Utilities, References, and other Analytics on Optimism",111,51,Jupyter Notebook,2023-02-08T13:30:13Z,2024-12-02T06:02:41Z,22
+smarthr-design-system,kufu/smarthr-design-system,,,111,18,MDX,2022-04-18T01:13:33Z,2024-12-02T06:03:26Z,19
+phishfort-lists,phishfort/phishfort-lists,,Blacklists and whitelists maintained by PhishFort,106,72,JavaScript,2018-10-04T09:21:24Z,2024-12-02T06:01:58Z,1198
+Proxy,ALIILAPRO/Proxy,,Get new and fast proxy list every hour.,103,20,,2023-02-26T03:29:06Z,2024-12-02T06:04:28Z,0
+RAPatches,RetroAchievements/RAPatches,,Patch repo for RetroAchievements.,98,54,JavaScript,2021-01-13T06:09:14Z,2024-12-02T06:03:26Z,5
+ratpstatus,wincelau/ratpstatus,,"Page de suivi et d'historisation de l'état du trafic des Ⓜ️ Métros, 🚆 RER / Transiliens et 🚈 Tramways d'Île de France",98,4,HTML,2024-04-22T21:47:18Z,2024-12-02T06:04:13Z,2
+labyrinth,CERTCC/labyrinth,,"Come inside, and have a nice cup of tea.",98,35,,2021-08-19T18:15:53Z,2024-12-02T06:01:25Z,12
+VoiceConversionLab,tarepan/VoiceConversionLab,,Collect Voice Conversion researches,91,7,TypeScript,2019-12-29T20:35:34Z,2024-12-02T06:00:48Z,108
+current-song2,Nerixyz/current-song2,,Display the currently playing song/audio.,91,7,TypeScript,2021-08-20T10:02:43Z,2024-12-02T06:01:56Z,30
+nicolas-hoizey.com,nhoizey/nicolas-hoizey.com,,"The personal website/blog from Nicolas Hoizey, built with https://pack11ty.dev/",91,35,JavaScript,2014-11-06T20:35:24Z,2024-12-02T06:02:40Z,129
+scamblocklist,durablenapkin/scamblocklist,,A blocklist to protect users against untrustworthy sites.,90,6,,2019-10-30T16:08:04Z,2024-12-02T06:02:43Z,3
+PaiGram,PaiGramTeam/PaiGram,,"telegram robot, query the official genshin information",85,24,Python,2022-04-14T06:44:08Z,2024-12-02T06:01:15Z,19
+Uniswap-Mev-Bot,MxlProudGWda1/Uniswap-Mev-Bot,,"The source code for my Uniswap MEVbot. Complete instructions, usage guidelines, and access details are available in the README",80,62,Solidity,2024-11-29T21:26:16Z,2024-12-02T06:03:18Z,0
+build-scripts,ppc64le/build-scripts,,Build scripts for open source projects on Linux on POWER LE,79,247,Shell,2017-02-06T23:48:15Z,2024-12-02T06:01:14Z,512
+codeaurora-releases-tracker,androidtrackers/codeaurora-releases-tracker,,Tracking CAF new releases,78,4,Python,2018-10-23T14:54:30Z,2024-12-02T06:01:22Z,1
+PiRIS,kolei/PiRIS,,Проектирование и Разработка Информационных Систем,78,33,C#,2020-09-01T14:26:36Z,2024-12-02T06:01:14Z,1
+Proxy-List-World,themiralay/Proxy-List-World,,ICE Proxy list produces new proxies by collectively scanning the entire open source list in the world. Proxies are updated every 2 - 3 minutes. New Proxy sources will be added day by day. The list is always open source.,75,7,,2023-12-05T20:42:59Z,2024-12-02T06:01:23Z,3
+UnifontEX,stgiga/UnifontEX,,An extended fork of GNU Unifont with a focus on high compatibility.,73,1,C,2023-08-12T23:27:46Z,2024-12-02T06:04:31Z,4
+suraft,suraft/suraft,,Shared Unit Raft,72,3,Rust,2024-10-14T08:55:30Z,2024-12-02T06:04:32Z,0
+wca-live,thewca/wca-live,,Platform for running WCA competitions and sharing live results with the world,71,24,Elixir,2019-07-28T10:42:28Z,2024-12-02T06:00:54Z,39
+V2RAY_SUB,V2RAYCONFIGSPOOL/V2RAY_SUB,,Upload v2ray config and Telegram proxy without interruption 24 hours a day,70,6,,2024-07-06T04:42:34Z,2024-12-02T06:03:44Z,0
