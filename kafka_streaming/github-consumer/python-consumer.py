@@ -14,7 +14,9 @@ MAX_CSV_FILES = 10
 # s3 = boto3.client('s3', aws_access_key_id='<enteryouraccesskey', aws_secret_access_key='<enteryoursecretkey>')
 # bucket_name = '<add your bucket name>'
 
-CSV_HEADERS = ['name', 'full_name', 'html_url', 'description', 'stars', 'forks', 'language', 'created_at', 'updated_at', 'open_issues']
+# CSV_HEADERS = ['name', 'full_name', 'html_url', 'description', 'stars', 'forks', 'language', 'created_at', 'updated_at', 'open_issues']
+CSV_HEADERS = ['Id','Name','FullName','HtmlUrl','Description','Language','CreatedAt','UpdatedAt','PushedAt','OpenIssuesCount','ForksCount','StargazersCount','WatchersCount','Size','OwnerLogin','OwnerType','License']
+
 CSV_DIRECTORY =  "/app/csv_data/"
 if not os.path.exists(CSV_DIRECTORY):
     os.makedirs(CSV_DIRECTORY)
@@ -66,17 +68,39 @@ if __name__ == "__main__":
             repo_info = message.value
 
             for repo in repo_info:
+                # repo_data = {
+                #     'id': repo['id'],
+                #     'name': repo.get('name'),
+                #     'full_name': repo.get('full_name'),
+                #     'description': repo.get('description'),
+                #     'stars': repo.get('stargazers_count'),
+                #     'forks': repo.get('forks_count'),
+                #     'language': repo.get('language'),
+                #     'created_at': repo.get('created_at'),
+                #     'updated_at': repo.get('updated_at'),
+                #     'open_issues': repo.get('open_issues_count')
+                # }
+
                 repo_data = {
-                    'name': repo.get('name'),
-                    'full_name': repo.get('full_name'),
-                    'description': repo.get('description'),
-                    'stars': repo.get('stargazers_count'),
-                    'forks': repo.get('forks_count'),
-                    'language': repo.get('language'),
-                    'created_at': repo.get('created_at'),
-                    'updated_at': repo.get('updated_at'),
-                    'open_issues': repo.get('open_issues_count')
+                    'Id': repo['id'],
+                    'Name': repo['name'],
+                    'FullName': repo['full_name'],
+                    'HtmlUrl': repo['html_url'],
+                    'Description': repo['description'],
+                    'Language': repo['language'],
+                    'CreatedAt': repo['created_at'],
+                    'UpdatedAt': repo['updated_at'],
+                    'PushedAt': repo['pushed_at'],
+                    'OpenIssuesCount': repo['open_issues_count'],
+                    'ForksCount': repo['forks_count'],
+                    'StargazersCount': repo['stargazers_count'],
+                    'WatchersCount': repo['watchers_count'],
+                    'Size': repo['size'],
+                    'OwnerLogin': repo['owner']['login'],
+                    'OwnerType': repo['owner']['type'],
+                    'License': repo['license']['name'] if repo['license'] else 'NA'
                 }
+
                 all_repo_data.append(repo_data)
             print(f"Writing {len(all_repo_data)} records to CSV.")
             csv_filename = generate_csv_filename()

@@ -23,6 +23,8 @@ per_page = 100
 GITHUB_REPOS_URL = f"https://api.github.com/search/repositories?q={query}&sort=stars&order=desc&page={page}&per_page={per_page}"
 
 def gen_data():
+
+  producer_startTime = time.time()
   global last_fetched_timestamp
   
   producer = KafkaProducer(bootstrap_servers=KAFKA_SERVER, value_serializer=lambda x:dumps(x).encode('utf-8')) 
@@ -51,6 +53,10 @@ def gen_data():
     print(f"Error: {e}")
 
   producer.flush()
+
+  producer_endTime = time.time()
+
+  print(f"Running the entire Kafka Producer takes: {str(producer_endTime-producer_startTime)} seconds")
 
 if __name__ == "__main__":
   gen_data()
