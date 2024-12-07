@@ -29,7 +29,7 @@ class SimpleNN(nn.Module):
 class CSVHandler(FileSystemEventHandler):
     def __init__(self, directory):
         self.directory = directory
-        self.processed_count = 2
+        self.processed_count = 0
         self.train_file = "train.csv"
         self.val_file = "validation.csv"
         self.test_file = "test.csv"
@@ -41,6 +41,7 @@ class CSVHandler(FileSystemEventHandler):
 
     def process_csv(self, file_path):
         try:
+            start_time = time.time()
             # Read the CSV file
             data = pd.read_csv(file_path)
             print(f"Processing CSV file ...")  # Example: print first 5 rows
@@ -64,6 +65,7 @@ class CSVHandler(FileSystemEventHandler):
 
 
             if self.processed_count == 2:
+                training_start_time = time.time()
                 print("Getting training data and validation data and normalising...")
                 train_data = pd.read_csv(self.train_file)
                 validation_data = pd.read_csv(self.val_file)
@@ -82,8 +84,10 @@ class CSVHandler(FileSystemEventHandler):
                 print("Training the model...")
                 self.train_the_model(n_train,n_validation, model)
                 self.processed_count = 3
+                training_end_time = time.time()
                 print("Model is trained!!!")
                 print("Ready to predict the repo trend...")
+                print("Time taken to train the model",  training_end_time - training_start_time)
             
             if self.processed_count == 3:
                 print("Trend predictor running ...")
@@ -91,7 +95,8 @@ class CSVHandler(FileSystemEventHandler):
                 popularity_score = self.predict_the_trend(model)
                 self.sort_by_popularity(popularity_score)
 
-                
+            end_time = time.time()
+            print("Total time : ", end_time - start_time)
             print("Waiting for next file...")
 
         except Exception as e:
@@ -133,7 +138,7 @@ class CSVHandler(FileSystemEventHandler):
             print(f"Length of train.csv {len(combined_data)}")
 
             # Limit to 400 unique rows
-            if len(combined_data) > 400:
+            if len(combined_data) > 200:
                 combined_data = combined_data.iloc[:400]
                 self.processed_count = 1
                 print("Train.csv has reached its maximum capacity of 400 unique rows.")
