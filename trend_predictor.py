@@ -29,7 +29,7 @@ class SimpleNN(nn.Module):
 class CSVHandler(FileSystemEventHandler):
     def __init__(self, directory):
         self.directory = directory
-        self.processed_count = 0
+        self.processed_count = 2
         self.train_file = "train.csv"
         self.val_file = "validation.csv"
         self.test_file = "test.csv"
@@ -43,33 +43,34 @@ class CSVHandler(FileSystemEventHandler):
         try:
             # Read the CSV file
             data = pd.read_csv(file_path)
-            print(f"Processing CSV file:\n{data.head()}")  # Example: print first 5 rows
+            print(f"Processing CSV file ...")  # Example: print first 5 rows
 
             #initialise the model
             model = SimpleNN()
 
             #preprocess the data
+            print("pre-processing the data...")
             dataset = self.pre_process(data)
 
 
             if self.processed_count == 0:
-                print(f"Processing to get unique 400 data logic:\n{data.head()}")  # Custom logic for the first 3 files
+                print(f"Processing to get unique 400 data...")  # Custom logic for the first 3 files
                 self.add_to_train(dataset)
 
 
             if self.processed_count == 1:
-                print("Creating validation dataset")
+                print("Creating validation dataset...")
                 self.add_to_validation(dataset)
 
 
             if self.processed_count == 2:
-                print("Getting training data and validation data and normalising")
+                print("Getting training data and validation data and normalising...")
                 train_data = pd.read_csv(self.train_file)
                 validation_data = pd.read_csv(self.val_file)
 
                 train_len = len(train_data)
 
-                print("Combine the data for normalization")
+                print("Combine the data for normalization...")
                 combined_data = pd.concat([train_data, validation_data])
 
                 print("Normalising...")
@@ -83,25 +84,34 @@ class CSVHandler(FileSystemEventHandler):
                 self.processed_count = 3
                 print("Model is trained!!!")
                 print("Ready to predict the repo trend...")
-            elif self.processed_count == 3:
+            
+            if self.processed_count == 3:
                 print("Trend predictor running ...")
                 self.add_to_test(dataset)
-                self.predict_the_trend(self,model)
-            else:
-                print(f"Processing remaining files logic:\n{data.head()}")  # Custom logic for the rest
-                self.do_something_with_rest(data)
+                popularity_score = self.predict_the_trend(model)
+                self.sort_by_popularity(popularity_score)
 
+                
+            print("Waiting for next file...")
 
         except Exception as e:
-            print(f"Failed to process {file_path}: {e}")
+            print(f"Failed to process : {e}")
 
+    def sort_by_popularity(self, popularity_score):
+        test_file = "test.csv"
+        test_data = pd.read_csv(test_file)
 
+        test_data['popularity_score'] = popularity_score
+        sorted_data = test_data.sort_values(by='popularity_score', ascending=False)
+
+        sorted_data.to_csv("sorted_test.csv", index=False)
+        return
 
     def pre_process(self, dataset):
         dataset['Description'] = dataset['Description'].fillna('')
         dataset['description_length'] = dataset['Description'].apply(len)
 
-        columns_to_drop = ['Name', 'FullName', 'HtmlUrl', 'Description', 'Language','OwnerLogin', 'OwnerType', 'CreatedAt', 'UpdatedAt', 'PushedAt', 'License','WatchersCount']
+        columns_to_drop = ['FullName', 'HtmlUrl', 'Description', 'Language','OwnerLogin', 'OwnerType', 'CreatedAt', 'UpdatedAt', 'PushedAt', 'License','WatchersCount']
 
         dataset = dataset.drop(columns=columns_to_drop)
 
@@ -113,16 +123,19 @@ class CSVHandler(FileSystemEventHandler):
         try:
             if os.path.exists(self.train_file):
                 train_data = pd.read_csv(self.train_file)
+                print("extracting from train.csv...")
             else:
                 train_data = pd.DataFrame()
 
             combined_data = pd.concat([train_data, dataset]).drop_duplicates()
 
+            combined_data.to_csv(self.train_file, index=False)
+            print(f"Length of train.csv {len(combined_data)}")
+
             # Limit to 400 unique rows
             if len(combined_data) > 400:
                 combined_data = combined_data.iloc[:400]
                 self.processed_count = 1
-                combined_data.to_csv(self.train_file, index=False)
                 print("Train.csv has reached its maximum capacity of 400 unique rows.")
         except Exception as e:
             print(f"Error updating {self.train_file}: {e}")
@@ -137,13 +150,15 @@ class CSVHandler(FileSystemEventHandler):
                 val_data = pd.DataFrame()
 
             combined_data = pd.concat([val_data, dataset]).drop_duplicates()
+            combined_data.to_csv(self.val_file, index=False)
+            print(f"length of validation.csv {len(combined_data)}")
 
             # Limit to 100 unique rows
             if len(combined_data) > 100:
-                combined_data = combined_data.iloc[:400]
+                combined_data = combined_data.iloc[:100]
                 self.processed_count = 2
                 print("Validation.csv has reached its maximum capacity of 100 unique rows.")
-                combined_data.to_csv(self.val_file, index=False)
+               
         except Exception as e:
             print(f"Error updating {self.val_file}: {e}")
 
@@ -152,9 +167,9 @@ class CSVHandler(FileSystemEventHandler):
             test_data = pd.DataFrame()
 
             combined_data = pd.concat([test_data, dataset]).drop_duplicates()
-            combined_data.to_csv(self.val_file, index=False)
+            combined_data.to_csv(self.test_file, index=False)
         except Exception as e:
-            print(f"Error updating {self.val_file}: {e}")
+            print(f"Error updating {self.test_file}: {e}")
 
 
 
@@ -186,7 +201,7 @@ class CSVHandler(FileSystemEventHandler):
             
             self.train(model, X_train, y_train_scaled, X_val, y_val_scaled, criterion, optimizer, 1000)
         except Exception as e:
-            print("Error in Model training :(")
+            print(f"Error in Model training :( {e}")
         return
     
     def predict_the_trend(self,model):
@@ -208,11 +223,12 @@ class CSVHandler(FileSystemEventHandler):
             y_test_pred_scaled = model(X_test)
 
             y_test_pred  = scaler.inverse_transform(y_test_pred_scaled.detach().numpy())
-            return
+            print("Predictions are : ",y_test_pred[:10])
+            return y_test_pred
 
 
         except Exception as e:
-            print("Error in predicting the trend")
+            print(f"Error in predicting the trend {e}")
 
     def normalise(self, dataset):
         columns_to_normalize = ['OpenIssuesCount', 'ForksCount', 'Size', 'description_length']
@@ -226,7 +242,7 @@ class CSVHandler(FileSystemEventHandler):
         return dataset
     
 
-    def train(self, model, X_train, y_train, X_val, y_val, optimizer, criterion, epochs):
+    def train(self, model, X_train, y_train, X_val, y_val, criterion, optimizer, epochs):
         for epoch in range(epochs):
             model.train()
             
